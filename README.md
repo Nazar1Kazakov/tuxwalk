@@ -45,7 +45,7 @@ entry in `modules/bar/Bar.qml`, and adds it immediately after the workspaces in
 file it replaces to `backups/<timestamp>/`. Running it again does not duplicate
 the entry or change an existing placement. Restart Caelestia after installing. Shell updates may overwrite the
 delegate registration; rerun the installer after an update if needed.
-An existing CatWalk install is renamed to TuxWalk in place, preserving its bar
+An earlier penguin install is renamed to TuxWalk in place, preserving its bar
 position and enabled state.
 
 Move `{"id": "tuxwalk", "enabled": true}` between `bar.entries.start`,
