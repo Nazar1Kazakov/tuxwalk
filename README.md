@@ -15,6 +15,12 @@ This is TuxWalk on my actual Caelestia bar. The enlarged preview below shows the
 
 [Watch the animation demo](media/tuxwalk-demo.mp4)
 
+### Full taskbar screenshot
+
+The penguin is just below the terminal icon. Click the image to view it at its original size.
+
+<a href="media/tuxwalk-taskbar-full.png"><img src="media/tuxwalk-taskbar-full.png" alt="Full Caelestia taskbar with TuxWalk" width="80"></a>
+
 | CPU load | Animation |
 | --- | --- |
 | Below 5% | Sleeping with floating z's |
