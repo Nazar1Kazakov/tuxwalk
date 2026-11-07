@@ -4,7 +4,7 @@ import Caelestia.Config
 import Caelestia.Services
 import qs.components
 import qs.services
-import "CatMotion.js" as Motion
+import "TuxMotion.js" as Motion
 
 StyledRect {
     id: root
@@ -45,7 +45,7 @@ StyledRect {
         }
     }
 
-    CatSprite {
+    TuxSprite {
         anchors.horizontalCenter: parent.horizontalCenter
         anchors.verticalCenter: parent.verticalCenter
         anchors.verticalCenterOffset: -2

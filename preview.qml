@@ -1,36 +1,65 @@
 import QtQuick
 import QtQuick.Window
 import "components"
+
 Window {
-    width: 680
-    height: 250
+    id: root
+    width: 960
+    height: 360
     visible: true
-    color: "#16131d"
+    color: "#101116"
+    title: "TuxWalk preview"
+
+    Text {
+        x: 34
+        y: 22
+        text: "TuxWalk"
+        color: "#f4f4f4"
+        font.family: "sans-serif"
+        font.bold: true
+        font.pixelSize: 30
+    }
+    Text {
+        x: 200
+        y: 32
+        text: "an animated penguin for the Caelestia bar"
+        color: "#a6a6a6"
+        font.family: "sans-serif"
+        font.pixelSize: 16
+    }
+
     Row {
-        anchors.centerIn: parent
+        x: 34
+        y: 78
         spacing: 18
         Repeater {
             model: ["sleep", "walk", "run"]
             delegate: Rectangle {
                 required property string modelData
-                width: 192
-                height: 190
-                radius: 28
-                color: "#24202e"
-                CatSprite {
+                width: 285
+                height: 245
+                radius: 20
+                color: "#202127"
+                border.color: "#383a42"
+                border.width: 1
+
+                TuxSprite {
                     anchors.horizontalCenter: parent.horizontalCenter
-                    y: 22
-                    width: 150
-                    height: 125
+                    y: 14
+                    width: 220
+                    height: 183
                     phase: parent.modelData
+                    fur: "#b9b9b9"
+                    detail: "#404040"
                 }
                 Text {
                     anchors.horizontalCenter: parent.horizontalCenter
-                    y: 150
-                    text: parent.modelData === "sleep" ? "SLEEP · < 5%" : parent.modelData === "walk" ? "WALK · 5–15%" : "RUN · ≥ 15%"
-                    color: "#cbbfff"
-                    font.pixelSize: 13
+                    y: 207
+                    text: parent.modelData === "sleep" ? "SLEEP  ·  < 5% CPU" : parent.modelData === "walk" ? "WALK  ·  5–15% CPU" : "RUN  ·  ≥ 15% CPU"
+                    color: "#e8e8e8"
                     font.family: "sans-serif"
+                    font.bold: true
+                    font.pixelSize: 16
                 }
             }
         }

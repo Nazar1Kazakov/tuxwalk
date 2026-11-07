@@ -10,7 +10,7 @@ from PySide6.QtQuick import QQuickWindow
 root = Path(__file__).resolve().parent
 app = QGuiApplication([])
 js = QJSEngine()
-js.evaluate((root / "components/CatMotion.js").read_text().replace(".pragma library", ""))
+js.evaluate((root / "components/TuxMotion.js").read_text().replace(".pragma library", ""))
 for load, phase, expected in [
     (0, "", "sleep"), (4.99, "", "sleep"), (5, "", "walk"),
     (14.99, "walk", "walk"), (15, "walk", "run"), (100, "sleep", "run"),
