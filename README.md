@@ -1,4 +1,4 @@
-# Caelestia CatWalk 🐧
+# TuxWalk 🐧 for Caelestia
 
 A small animated CPU penguin for Caelestia's taskbar, drawn as theme-coloured vectors.
 Supports left, right, top and bottom bars. Shares Caelestia's native CPU service;
@@ -9,7 +9,7 @@ with a faster stride while running. Hover for the current activity and CPU load.
 
 ![CatWalk installed in a vertical Caelestia bar](media/bar-preview.png)
 
-[Watch the desktop demo](media/catwalk-demo.mp4)
+[Watch the desktop demo](media/tuxwalk-demo.mp4)
 
 | CPU load | Animation |
 | --- | --- |
@@ -24,8 +24,8 @@ Edit `components/CatMotion.js` to change the boundaries and reinstall.
 ## Install
 
 ```sh
-git clone https://github.com/Nazar1Kazakov/caelestia-catwalk.git
-cd caelestia-catwalk
+git clone https://github.com/Nazar1Kazakov/tuxwalk.git
+cd tuxwalk
 python3 install.py
 caelestia shell -r -d
 ```
